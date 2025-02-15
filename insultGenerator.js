@@ -1,4 +1,4 @@
-// const result = document.getElementById('result')
+const result = document.getElementById('result')
 
 //format: "go <action> <noun>, ya <descriptor> <noun or adj> <noun>"
 
@@ -30,7 +30,7 @@ function generate(action, noun1, descriptor, nounOrAdj, noun2){
     noun2 = noun2[Math.floor(Math.random()*noun2.length)]
     // console.log(noun2)
 
-    return `Go ${action} ${noun1}, ya ${descriptor} ${nounOrAdj} ${noun2}!`
+    result.innerText = `Go ${action} ${noun1}, ya ${descriptor} ${nounOrAdj} ${noun2}!`
     // console.log(rxName)
 }
 
